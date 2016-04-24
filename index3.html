@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title></head>
+<!--http://cssdeck.com/labs/responsive-hexagonal-grid-->
+<style type="text/css">
+
+
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+
+.hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: red;
+    position: relative;
+}
+
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.left-top-triangle {
+  width: 0;
+  border-left: 90px solid #fff;
+  border-bottom: 52px solid transparent;
+  border-right: 25px solid transparent;
+  display:inline-block;
+}
+
+.right-top-triangle {
+  width: 0;
+  border-right: 90px solid #fff;
+  border-bottom: 52px solid transparent;
+  border-left: 25px solid transparent;
+  display:inline-block;
+}
+
+.left-bottom-triangle {
+  width: 0;
+  border-left: 90px solid #fff;
+  border-top: 52px solid transparent;
+  border-right: 25px solid transparent;
+  display:inline-block;
+}
+
+.right-bottom-triangle {
+  width: 0;
+  border-right: 90px solid #fff;
+  border-top: 52px solid transparent;
+  border-left: 25px solid transparent;
+  display:inline-block;
+}
+
+.box {
+  width: 230px;
+  height:50px;
+  background-color: transparent;
+}
+
+.top-div {
+background-image: url(http://placekitten.com/200/320);
+width: 234px;
+height: 158px;
+}
+
+
+</style>
+
+<body>
+
+    <section id="lab">
+    
+    <article>
+
+        <div class="hex" style="background-image: url(http://placekitten.com/200/320);">      
+        </div>
+        <span style="color: #6C6; font-size: 135px;">&#x2B22;</span>
+
+        <div class="left-triangle" >      
+        </div>
+
+        <div class="right-triangle" >      
+        </div>
+
+
+        <div class="top-div">
+
+            <div class="left-top-triangle" ></div>
+
+            <div class="right-top-triangle" ></div>
+
+            <div class="box" ></div>
+
+            <div class="left-bottom-triangle" ></div>
+
+            <div class="right-bottom-triangle" ></div>
+
+        </div>
+
+<!--
+<div style="position: relative; width: 400px; height: 100px; margin: 0px auto 0px auto; top: 50px; background-color: #f00;">
+ <div style="position: relative; height: 100px; width: 100px; background-color: blue; left: 20px; top: -50px;">
+ </div>
+</div>-->
+
+</body>
+</html>
